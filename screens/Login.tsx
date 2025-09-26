@@ -29,6 +29,10 @@ const Login: React.FC<LoginProps> = ({ navigation }) => {
   }, [fadeAnim]);
 
   const handleLogin = () => {
+    if (!username.trim() || !password.trim()) {
+      Alert.alert('Error', 'Please enter username and password');
+      return;
+    }
     if (username === 'admin' && password === 'admin') {
       // Admin user goes to AddCar screen
       navigation.replace('Drawer', {
