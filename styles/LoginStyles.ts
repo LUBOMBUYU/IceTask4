@@ -1,0 +1,86 @@
+import { StyleSheet } from 'react-native';
+
+export const loginStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+  },
+  card: {
+    width: 350,
+    maxWidth: 500, // Maximum width for better desktop display
+    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    borderRadius: 12,
+    padding: 32,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.3,
+    shadowRadius: 20,
+    elevation: 10,
+    alignItems: 'center',
+  },
+  logo: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#007bff',
+    marginBottom: 8,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#666',
+    textAlign: 'center',
+    marginBottom: 24,
+    lineHeight: 20,
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    height: 50,
+    borderColor: '#ddd',
+    borderWidth: 1,
+    marginBottom: 16,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    backgroundColor: '#fff',
+  },
+  input: {
+    flex: 1,
+    fontSize: 16,
+    marginLeft: 8,
+  },
+  icon: {
+    fontSize: 18,
+  },
+  button: {
+    width: '100%',
+    backgroundColor: '#007bff',
+    paddingVertical: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginTop: 8,
+    shadowColor: '#007bff',
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.3,
+    shadowRadius: 10,
+    elevation: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  forgotPassword: {
+    marginTop: 16,
+    color: '#007bff',
+    fontSize: 14,
+    textDecorationLine: 'underline',
+  },
+});
