@@ -1,0 +1,33 @@
+Wireframe for Car Booking App Navigation
+
+1. Login Screen
+   - Title: Car Booking Service
+   - Input: Username
+   - Input: Password
+   - Button: Login
+   - Navigation: If admin (username: admin, password: admin) -> AddCar
+                Else -> RentCar
+
+2. AddCar Screen (Admin)
+   - Title: Add a Car
+   - Input: Make
+   - Input: Model
+   - Input: Cost per Day
+   - Button: Add Car (clears inputs on success)
+   - Button: Back (to Login)
+
+3. RentCar Screen (Customer)
+   - Title: Rent a Car
+   - List of Cars (with image, make model, cost/day)
+   - Select a car
+   - Input: Number of days
+   - Button: Calculate Total
+   - Modal: Booking Summary (Car, Days, Total)
+     - Button: Confirm -> Confirmation
+     - Button: Cancel
+
+4. Confirmation Screen
+   - Title: Booking Confirmed
+   - Display: Car make model
+   - Display: Days
+   - Display: Amount Due on Pickup
